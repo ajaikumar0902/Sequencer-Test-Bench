@@ -1,0 +1,10 @@
+Sequence,Intermediate Abort ,,Safety Abort,,Other,,,,,,
+,Sequence Name: AB1,,,,,,,,,,
+,No.of Sensors: 0,,,No.of Valves: 5,,,,,,,
+Sr. No.,Time CDT(ms),Component ID,Data Type,Condition,Range/Position,No of Samples for Pass,Event Duration(ms),Continuous /Cumulative,Expected Delay(ms),Failure Case Sequence,Current Sequence
+3,,F_EPV_131,DO,,Open,5,10,,100,,Abort_1
+4,,F_EPV_131,DO,,Close,5,10,,25,,Abort_1
+5,,F_EPV_132,DO,,Open,5,10,,20,,Abort_2
+6,,F_EPV_132,DO,,Close,5,10,,250,,Abort_2
+15,,F_EPV_136,DO,,Open,5,10,,2500,,Abort_1
+16,,F_EPV_136,DO,,Close,5,10,,50,,Abort_1

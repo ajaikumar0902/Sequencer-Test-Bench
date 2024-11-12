@@ -1,0 +1,20 @@
+Sequence,Intermediate Abort ,,Safety Abort,,Other,,,,,,
+,Sequence Name: et1,,,,,,,,,,
+,No.of Sensors: 2,,,No.of Valves: 5,,,,,,,
+Sr. No.,Time CDT(ms),Component ID,Data Type,Condition,Range/Position,No of Samples for Pass,Event Duration(ms),Continuous /Cumulative,Expected Delay(ms),Failure Case Sequence,Current Sequence
+1,-150,M_PT_1,AI,>,30,5,10,Continuous,50,Abort_1,Test Sequence
+3,-150,C_EPV_MOV,DI,,Open,5,10,Continuous,25,,Test Sequence
+4,-120,C_EPV_MOV,DI,,Close,5,10,Continuous,25,,Test Sequence
+5,-150,C_EPV_MOV3,DI,,Open,5,10,Continuous,25,,Test Sequence
+6,-135,C_EPV_MOV2,DI,,Close,5,10,Continuous,25,,Test Sequence
+7,-100,C_EPV_MOV,DI,,Open,5,10,cumulative,25,Abort_3,Test Sequence
+8,-120,M_PT_2,AI,>,30,5,10,Continuous,50,Abort_2,Test Sequence
+9,-120,M_PT_1,AI,=,45,5,10,cumulative,50,Abort_2,Test Sequence
+10,-100,M_PT_1,AI,<,30,5,10,Continuous,50,Abort_2,Test Sequence
+11,-50,M_PT_2,AI,<,60,5,10,Continuous,50,Abort_3,Test Sequence
+12,-50,M_PT_1,AI,=,50,5,10,Continuous,50,Abort_3,Test Sequence
+13,-50,C_EPV_MOV2,DI,,Open,5,10,Continuous,25,Abort_3,Test Sequence
+14,-50,C_EPV_MOV3,DI,,Close,5,10,cumulative,25,Abort_1,Test Sequence
+15,-20,F_EPV_136,DO,,Open,5,10,Continuous,25,,Test Sequence
+16,-10,F_EPV_136,DO,,Close,5,10,Continuous,25,,Test Sequence
+17,-5,C_EPV_MOV4,DI,,Open,5,10,cumulative,25,Abort_1,Test Sequence
